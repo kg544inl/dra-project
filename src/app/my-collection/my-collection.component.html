@@ -1,0 +1,11 @@
+<div *ngIf="events">
+    my events:
+    <ul *ngFor="let event of events">
+        <li>
+        <!-- id: {{event.id}} -->
+        <span><strong>title:</strong> {{event.title}}</span>
+        <br>
+        <span><strong>link:</strong> {{event.link}}</span>
+        </li>
+    </ul>
+</div>

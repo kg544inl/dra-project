@@ -1,0 +1,34 @@
+<div *ngIf="event">
+
+    <h2>{{event.id}} id</h2>
+    <span>title: </span>{{event.title}}
+    <br>
+    <span>description: </span>{{event.description}}
+    <br>
+    <span>link: </span>{{event.link}}
+    <br>
+    <span>closed: </span>{{event.closed}}
+    <br>
+    <span>category: </span>
+    <div *ngFor="let category of event.categories">
+      {{category.title}}
+    </div>
+    <br>
+    <span>sources: </span>
+    <div *ngFor="let sources of event.sources">
+      id: {{sources.id}}
+      <br>
+      url: <a href="{{sources.url}}">{{sources.url}}</a>
+    </div>
+    <span>geometry: </span>
+    <div *ngFor="let geometry of event.geometry">
+      date: {{geometry.date}}
+      coordinates: [{{geometry.coordinates}}]
+    </div>
+    
+    <button (click)="addToCollection()">
+      add to my collection
+    </button>
+  </div>
+
+  <button type="button" (click)="goBack()">go back</button>

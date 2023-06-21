@@ -1,0 +1,16 @@
+/* .app-map {
+    border: solid black;
+    background-color: blue;
+    height: auto; 
+    width: 60%;
+    z-index: 1;
+}
+*/
+#map {
+    border: solid black;
+    height: 700px; 
+    width: 1400px;
+    /* height: fit-content; 
+    width: fit-content; */
+    /* position: relative; */
+}

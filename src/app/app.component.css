@@ -1,0 +1,31 @@
+app-map {
+    position: absolute;
+    z-index: 1;
+    /* top: 0px; */
+    /* position: relative; */
+}
+
+app-events {
+    position: absolute;
+    z-index: 1;
+}
+
+a {
+    padding: 12px;
+    background-color: aquamarine;
+    border: solid darkcyan 1px;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 3px;
+  }
+
+  nav {
+    padding: 7px;
+    margin-bottom: 7px;
+    width: fit-content;
+    float: auto;
+  }
+
+  #mycollection {
+    margin-right: 20px;
+  }

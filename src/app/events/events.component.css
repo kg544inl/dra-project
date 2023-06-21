@@ -1,0 +1,19 @@
+/* .content {
+    padding: 20px;
+    margin-top: 50px;
+  }
+  */
+.container{
+  /* background-color: red; */
+  width: fit-content;
+  z-index: 2;
+} 
+
+/* nav {
+  float: right;
+  padding: 12px;
+  background-color: aquamarine;
+  border: solid darkcyan 1px;
+  border-radius: 5px;
+  width: fit-content;
+} */

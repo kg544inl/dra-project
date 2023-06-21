@@ -1,0 +1,13 @@
+Przykład deklaracji typu events jako any[]:
+events: any[] = [];
+
+Alternatywnie, jeśli znasz strukturę danych dla wydarzeń, możesz stworzyć interfejs lub klasę, która odzwierciedla tę strukturę i użyć jej jako typu dla tablicy events. Na przykład:
+
+typescript
+Copy code
+interface Event {
+  category: string;
+  // inne właściwości
+}
+
+events: Event[] = [];

@@ -1,0 +1,21 @@
+<!-- <nav>
+  <a routerLink="/home">home</a>
+</nav> -->
+
+<!-- <button (click)="getCategories()">categories</button> -->
+
+<div *ngIf="categories">
+    <h2>categories with NASA EONET:</h2>
+    <ul>
+      <li *ngFor="let category of categories">
+        <a routerLink="/c-detail/{{category.id}}">
+          <h3 >{{ category.title }}</h3>
+          <!-- (click)="navigateToCategoryDetails(category.id)" -->
+        </a>
+        {{category.description}}
+    </li>
+    </ul>
+
+   
+
+  </div>

@@ -1,0 +1,39 @@
+<!-- <nav>
+  <a routerLink="/home">home</a>
+</nav> -->
+<div class="container">
+  <div class="content" *ngIf="events">
+    <h2>Events with NASA EONET:</h2>
+    <ul>
+      <li *ngFor="let event of events">
+        <a routerLink="/detail/{{event.id}}">
+          {{event.title}}
+        </a>
+
+    </li>
+    </ul>
+
+    <button (click)="loadMore()" *ngIf="events.length < allEvents.length">
+        load more
+    </button>
+
+    <!-- <app-event-details [event]="selectedEvent"></app-event-details> -->
+
+    <!-- <button (click)="goHome()">go home</button> -->
+    
+  </div>
+
+
+  <!-- nowe -->
+  <div class="container">
+    <div class="search-bar">
+      <input
+        type="text"
+        [(ngModel)]="searchKeyword"
+        (input)="searchEvents()"
+        placeholder="Search..."
+      >
+      <button (click)="clearSearch()">Clear</button>
+    </div>
+  
+</div>
